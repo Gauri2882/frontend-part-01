@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CSS: 2D Transform</title>
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+
+        div#mydiv {
+            transform: rotate(20deg);
+        }
+
+        div#mydiv1 {
+            transform: rotate(-20deg);
+        }
+
+        div#mydiv2 {
+            transform: skewX(20deg);
+        }
+
+        div#mydiv3 {
+            transform: skewY(20deg);
+        }
+    
+    </style>
+</head>
+<body>
+    <div> This is box with no transformation</div>
+    <br>
+    <div id = "mydiv">This is box 20 degree rotation</div>
+    <br>
+    <div id = "mydiv1">This is box with -20 degree rotation</div>
+    <br>
+    <hr/>
+    <div id = "mydiv2">This is box with 20 degree skew with X</div>
+    <br>
+    <div id = "mydiv3">This is box with 20 degree skew with Y</div>
+</body>
+</html>
