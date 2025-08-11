@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CSS: 3D Transform</title>
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+
+        div#mydiv {
+            transform: rotateX(150deg);
+        }
+
+        div#mydiv1 {
+            transform: rotateY(150deg);
+        }
+
+        div#mydiv2 {
+            transform: rotateZ(150deg);
+        }
+
+        div#mydiv3 {
+            transform: skewY(20deg);
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div> This is box with no transformation</div>
+    <br> Rotate X axis
+    <div id = "mydiv">This is box with 150 degree X-rotation</div>
+    <br> Rotate Y axis
+    <div id = "mydiv1">This is box with 150 degree Y-rotation</div>
+    <br> Rotate Z axis
+    <div id = "mydiv2">This is box with 150 degree Z-rotation</div>
+    <br>
+    <div id = "mydiv3">This is box with 20 degree skew with Y</div>
+
+</body>
+</html>
