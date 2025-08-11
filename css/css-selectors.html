@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CSS: Selectors</title>
+    <style>
+        /* Name selector */
+        h1 {
+            color: blue;
+        }
+
+        h2 {
+            color: green;
+            text-decoration: underline;
+        }
+
+        b, i {
+            text-decoration: underline;
+        }
+
+        p b {
+            background-color: pink;
+        }
+
+        /* Class selector */
+        .style1 {
+            color: green;
+            font-family: Times New Roman;
+        }
+
+        .style2 {
+            color: red;
+            font-family: cursive;
+        }
+
+        /* ID selector */
+        #mydiv {
+            height: 300px;
+            width: 500px;
+            background-color: yellowgreen;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    Name selectors:
+    <h1>This is styled using name selector</h1>
+    <h2>This is styled using name selector as well</h2>
+    <h2>This is styled using name selector as well</h2>
+    <h2>This is styled using name selector as well</h2>
+    <b>This and italic tag is styled together</b> <br>
+    <i>This and bold tag is styled together</i>
+    <p style="text-decoration: none;">This is sample of <b>nested styling</b>, where <b>bold tag</b> will be pink when 
+        used inside <b>paragraph tag</b> only. But it will be also underlined as we made bold
+        and italic tag underlined to avoid it I made text decoration to none <b>inline</b>
+    </p> <br><hr/><br>
+
+    Class Selector:
+    <h2 class="style1"> Heading 1</h2>
+    <p class="style1"> This is paragraph used with class selector to keep different style for 
+         same tag as this and below text uses 'h2' and 'p' tag, but you can see
+            they look different
+    </p>
+
+    <h2 class="style2"> Heading 2</h2>
+    <p class="style2"> This is paragraph used with class selector to keep different style for 
+            same tag as this and above text uses 'h2' and 'p' tag, but you can see
+            they look different
+    </p>
+    </p> <br><hr/><br>
+
+    ID Selector:
+    <div id="mydiv">
+        <h2 class="style1"> Heading 1</h2>
+        <p class="style1"> This is paragraph is inside div where the style of
+            particular id is applied and hence everything is inside a box. This is
+            sample of ID Selector with class selector
+        </p>
+
+        <h2 class="style2"> Heading 2</h2>
+        <p class="style2"> This is paragraph is inside div where the style of
+            particular id is applied and hence everything is inside a box. This is
+            sample of ID Selector with class selector
+        </p>
+    </div>
+
+</body>
+</html>
