@@ -1,0 +1,26 @@
+.boxdiv {
+    min-height: 150px;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: forestgreen;
+    font-weight: bold;
+    color: white;
+}
+
+.boxdiv1 {
+    min-height: 150px;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: olivedrab;
+    font-weight: bold;
+    color: white;
+}
+
+.boxdiv2 {
+    min-height: 150px;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: greenyellow;
+    font-weight: bold;
+    color: white;
+}
