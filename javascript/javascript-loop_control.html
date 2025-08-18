@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Loop Control</title>
+</head>
+<body>
+     <script language="javascript" type="text/javascript">
+        var i;
+
+        document.write("Used 'break ' at i = 5")
+        document.write("<br/>")
+
+        for (i = 1; i <= 10; i++) {
+            if (i == 5) {
+                break;
+            }
+            document.write("i = " + i + "<br/>")
+        }
+
+        document.write("<br/>")
+
+        document.write("Used 'continue' at i = 5")
+        document.write("<br/>")
+
+        for (i = 1; i <= 10; i++) {
+            if (i == 5) {
+                continue;
+            }
+            document.write("i = " + i + "<br/>")
+        } 
+
+        document.write("<br/>")
+
+        document.write("Used 'continue' at i = 5 or i = 7")
+        document.write("<br/>")
+
+        for (i = 1; i <= 10; i++) {
+            if (i == 5 || i == 7) {
+                continue;
+            }
+            document.write("i = " + i + "<br/>")
+        }
+     </script>
+</body>
+</html>
