@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Logical Operators</title>
+</head>
+<body>
+     <script language="javascript" type="text/javascript">
+       var uid = prompt("Enter user ID", "User ID");
+       var pwd = prompt("Enter Password", "Password");
+    //    AND operator
+       var message = (uid == "John" && pwd == "1234") ? "Welcome John" : "Invalid User"
+       alert(message);
+
+       var user = prompt("Enter your name...", "Name...");
+    //    OR operator
+       var message1 = (user == "John" || user == "Sam") ? "Welcome" : "Invalid User";
+       alert(message1)
+
+       var user = prompt("Enter your name...", "Name...");
+    //    NOT operator  
+       var message2 = !(user == "John" || user == "Sam") ? "Welcome" : "Invalid User";
+       alert(message2)
+     </script>
+</body>
+</html>
