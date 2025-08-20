@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Functions</title>
+
+    <script language="javascript" type="text/javascript">
+        // with no parameters
+       function sayHello() {
+            document.write("Hello There!");
+       }
+
+       //  with parameters
+       function sayName(name, age) {
+            document.write(name + " is " + age + " years old.")
+       }
+
+       //  with termination if parameters are null
+       function sayName1(name, age) {
+            if (name == "" || age == "") {
+                return;
+            }
+            document.write(name + " is " + age + " years old.")
+       }
+    </script>
+
+</head>
+
+<body>
+     <p> Click the following button to call the function </p>
+     <form>
+        <input type = "button" onclick="sayHello()" value="Say Hello">
+     </form>
+
+     <br/>
+
+     <p> Click the following button to call the function with name and age </p>
+     <form>
+        <input name = "t1" placeholder="Enter Name"><br/> <br/>
+        <input name = "t2" placeholder="Enter Age"><br/> <br/>
+        <input type="button" onclick="sayName(t1.value, t2.value)" value="Say Hello with details" />
+     </form>
+
+     <br/>
+     
+     <p> Click the following button to call the function with name and age and does nothing if both values
+        are not passed </p>
+     <form>
+        <input name = "t1" placeholder="Enter Name"><br/> <br/>
+        <input name = "t2" placeholder="Enter Age"><br/> <br/>
+        <input type="button" onclick="sayName1(t1.value, t2.value)" value="Say Hello with details" />
+     </form>
+</body>
+</html>
