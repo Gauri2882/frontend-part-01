@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Animation</title>
+
+    <script language="javascript" type="text/javascript">
+        var arr = new Array("1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg");
+        var i = 0;
+        var ref;
+
+        function picLibrary() {
+            document.images[0].src = arr[i];
+            i++;
+            if (i >= 4) {
+                i = 0;
+            }
+        }
+        function start() {
+            ref = setInterval(picLibrary, 1000);
+        }
+
+        function stop() {
+            clearInterval(ref);
+        }
+
+        window.onload = start;
+    </script>
+
+</head>
+
+<body>
+    <img src="1.jpeg" name="img1" onmouseover="stop()" onmouseout="start()" />
+</body>
+</html>
